@@ -10,7 +10,7 @@
 body{
   font-size: 40px;
   /* background-image: url("bg6.jpg");  */
-  background-color:#7AC65A; 
+  background-color: #A1CFC8; 
   /* height: auto; */
   background-position: center; 
   background-repeat: no-repeat;
@@ -41,13 +41,13 @@ button {
   display: flex;
   justify-content: center;
   justify-content: space-around;
-  padding-top: 500px;
+  padding-top: 400px;
   margin-bottom: 0px;
   
 }
 
 .score {
-  font-family: 'VT323', 'Common Pixel', sans-serif;
+  /* font-family: 'VT323', 'Common Pixel', sans-serif; */
   color: #FF0000;
   font-weight: 800;
   font-size: larger;
@@ -66,29 +66,44 @@ button {
 
 
 #userScore{
-  font-family: 'VT323','Common Pixel', sans-serif;
+  /* font-family: 'VT323','Common Pixel', sans-serif; */
   /* color: #FF0000; */
   font-weight: 800;
   font-size: larger;
   border: #FF0000;
   border-style: solid;
   border-width: 3px;
+  padding: 20px;
 }
 
 
 
 #computerScore{
-  font-family: 'VT323','Common Pixel', sans-serif;
+  /* font-family: 'VT323','Common Pixel', sans-serif; */
   /* color: #FF0000; */
   font-weight: 800;
   font-size: larger;
   border: #FF0000;
   border-style: solid;
   border-width: 3px;
+  padding: 20px;
   
 }
 .cnt {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
+}
+
+.div1 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  
+}
+.p1{
+  padding-left: 40px;
 }
