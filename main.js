@@ -84,7 +84,7 @@ Scissor.onclick = function(){
     
     if (userScore == 5) {
         console.log("you won the game")
-        alert("you won")
+        alert("You Won")
         uScore.textContent = "Your score : " + 0;
         cScore1.textContent = "Computer score : " + 0;
     }
@@ -95,7 +95,7 @@ Scissor.onclick = function(){
     cScore1.textContent = "Computer score : " + computerScore;
     if (computerScore == 5) {
         console.log("you lost the game")
-        alert("you lost")
+        alert("You Lost")
         cScore1.textContent = "Computer score : " + 0;
         uScore.textContent = "Your score : " + 0;
     }
