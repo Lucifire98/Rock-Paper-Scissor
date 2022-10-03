@@ -32,9 +32,9 @@ button {
   border-top: 3px solid #bbb;
   font-weight: 800;
   font-size: medium;
-  border : ridge
+  border : ridge;
+  cursor: pointer;
 
- 
 
 }
 
