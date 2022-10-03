@@ -49,7 +49,7 @@ Paper.onclick = function(){
         } else {
             ( x =" scissor")
             console.log("you loose")
-            score.textContent =  "you Loose! Scissor beats  Paper";
+            score.textContent =  "You loose! Scissor beats  Paper";
             cScore() ; 
         }
         // console.log(x)
