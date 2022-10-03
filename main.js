@@ -1,102 +1,102 @@
+const score = document.getElementById("score");
+const Rock = document.getElementById("rock")
+const Paper = document.getElementById("paper")
+const Scissor = document.getElementById("scissor")
+const uScore =  document.getElementById("userScore") ;
+const cScore1 = document.getElementById("computerScore");
 let computerScore = 0;
 let userScore = 0;
 let User ;
 let x;
 
-
-
-    document.getElementById("rock").onclick = function(){
+// Function for rock 
+Rock.onclick = function(){
         let x = Math.floor(Math.random() * 3) + 1;
     // console.log(x)
     if (x === 1) {
         (x = "rock")
         console.log("its a tie");
-        document.getElementById("score").innerHTML =  "its a tie";
+        score.textContent =  "Its a tie";
         } else if (x === 2) {
             ( x = "paper")
             console.log("you loose")
-            document.getElementById("score").innerHTML =  "you loose! paper beats  rock";
+            score.textContent =  "You loose! Paper beats  Rock";
             cScore() ; 
             
         } else {
             ( x =" scissor")
             console.log("you win")
-            document.getElementById("score").innerHTML =  "you win! rock beats  scissor";
+            score.textContent =  "You win! Rock beats  Scissor";
             Score() ; 
             
         }
         //  console.log(x)
 }
-    document.getElementById("paper").onclick = function(){
+
+// Function for Papper 
+Paper.onclick = function(){
     let x = Math.floor(Math.random() * 3) + 1;
     // console.log(x)
     if (x === 1) {
         (x = "rock")
         console.log("you win");
-        document.getElementById("score").innerHTML =  "you win! paper beats  rock";
+        score.textContent =  "You win! Paper beats  Rock";
         Score() ; 
         } else if (x === 2) {
             ( x = "paper")
             console.log("its a tie")
-            document.getElementById("score").innerHTML =  "its a tie";
+            score.textContent =  "Its a tie";
         } else {
             ( x =" scissor")
             console.log("you loose")
-            document.getElementById("score").innerHTML =  "you loose! scissor beats  paper";
+            score.textContent =  "you Loose! Scissor beats  Paper";
             cScore() ; 
         }
         // console.log(x)
 }
 
-
-    document.getElementById("scissor").onclick = function(){
+// Function for Scissor
+Scissor.onclick = function(){
     let x = Math.floor(Math.random() * 3) + 1;
     // console.log(x)
     if (x === 1) {
         (x = "rock")
-       document.getElementById("score").innerHTML =  "you loose! rock beats  scissor";
+       score.textContent =  "You loose! Rock beats  Scissor";
        cScore() ; 
         } else if (x === 2) {
             ( x = "paper")
             console.log("you win ")
-            document.getElementById("score").innerHTML = " you win! scissor beats paper "
+            score.textContent = " You win! Scissor beats Paper "
             Score() ; 
         } else {
             ( x =" scissor")
             console.log("it a tie")
-            document.getElementById("score").innerHTML = "its a tie! "
+            score.textContent = "Its a tie! "
         }
-        
-        // console.log(x)
+         // console.log(x)
 }
 
+
+// keeps the user score
     Score  = function  (){
     userScore+=1 <5
-    document.getElementById("userScore").innerHTML = "your score : " + userScore;
+    uScore.textContent = "Your score : " + userScore;
     
     if (userScore == 5) {
         console.log("you won the game")
         alert("you won")
-        document.getElementById("userScore").innerHTML = "your score : " + 0;
-        document.getElementById("computerScore").innerHTML = "computer score : " + 0;
-       
-        
-    }else{
-        
+        uScore.textContent = "Your score : " + 0;
+        cScore1.textContent = "Computer score : " + 0;
     }
- 
 }
-
-    cScore  = function  (){
+// keeps the computer Score
+  cScore  = function  (){
     computerScore+=1 < 5;
-    document.getElementById("computerScore").innerHTML = "computer score : " + computerScore;
+    cScore1.textContent = "Computer score : " + computerScore;
     if (computerScore == 5) {
         console.log("you lost the game")
         alert("you lost")
-        document.getElementById("computerScore").innerHTML = "computer score : " + 0;
-        document.getElementById("userScore").innerHTML = "your score : " + 0;
-    }else{
-        
+        cScore1.textContent = "Computer score : " + 0;
+        uScore.textContent = "Your score : " + 0;
     }
-
 }
